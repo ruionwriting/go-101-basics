@@ -13,7 +13,7 @@ Nick Lanng [@nicklanng](https://github.com/nicklanng)
 4. Slices and arrays
 5. Pointers vs values
 6. Functions
-7. [FizzBuzz Exercise](fizzbuzz-exercise)
+7. [FizzBuzz Exercise](#fizzbuzz-exercise)
 8. String Calculator Exercise
 
 <a name="fizzbuzz-exercise"/>

@@ -7,7 +7,7 @@ Rob Reid [@codingconcepts](https://github.com/codingconcepts)
 Nick Lanng [@nicklanng](https://github.com/nicklanng)
 
 ## Topics
-1. Install Go
+1. [Install Go](#install-go)
 2. What is the Go workspace and why is it different to project workspaces
 3. Data types
 4. Slices and arrays
@@ -15,6 +15,31 @@ Nick Lanng [@nicklanng](https://github.com/nicklanng)
 6. Functions
 7. [FizzBuzz Exercise](#fizzbuzz-exercise)
 8. String Calculator Exercise
+
+
+<a name="install-go"/>
+## 1. Install Go
+
+### Windows
+
+### Linux
+
+### Mac OS X
+The easiest way to install go is to use [Homebrew](http://brew.sh/).
+```bash
+brew install go
+```
+
+Create a folder for your go workspace, I like to make a folder at ```~/work/go```.
+
+Open your ~/.bashrc or ~/.zshrc (or whatever the config file is for your shell of choice).
+You need to set up your environmental variables used for Go tooling and binaries pulled down with ```go get```.
+
+Add the following lines to your shell config, be sure to set the right path if different:
+```bash
+export GOPATH=$HOME/work/go
+export PATH=$PATH:$GOPATH/bin
+```
 
 <a name="fizzbuzz-exercise"/>
 ## 7. FizzBuzz Exercise

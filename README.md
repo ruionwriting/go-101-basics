@@ -20,9 +20,13 @@ Nick Lanng [@nicklanng](https://github.com/nicklanng)
 ## 7. FizzBuzz Exercise
 
 In this classic coding kata, you are tasked with printing the numbers from 1 to 100.
+
 However, there are some extra rules.
+
 If the number is a multiple of 3 then, instead of the number, print 'Fizz'.
+
 If the number is a multiple of 5 then, instead of the number, print 'Buzz'.
+
 If the number is a multiple of BOTH then instead of the number, print 'FizzBuzz'.
 
 <details><summary>Click here to see the solution!</summary><p>

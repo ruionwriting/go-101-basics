@@ -30,7 +30,7 @@ The easiest way to install go is to use [Homebrew](http://brew.sh/).
 brew install go
 ```
 
-Create a folder for your go workspace, I like to make a folder at ```~/work/go```.
+Create a folder for your Go workspace, I like to make a folder at ```~/work/go```.
 
 Open your ~/.bashrc or ~/.zshrc (or whatever the config file is for your shell of choice).
 You need to set up your environmental variables used for Go tooling and binaries pulled down with ```go get```.

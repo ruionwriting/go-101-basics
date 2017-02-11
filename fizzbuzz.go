@@ -13,10 +13,10 @@ func main() {
 
 // FizzBuzz takes an integer i and returns a string based
 // on the following rules:
-// - If the integer is divisible by 3 and 5	-> "FizzBuzz"
-// - If the integer is divisible by 3				-> "Fizz"
-// - If the integer is divisible by 5				-> "Buzz"
-// - If the integer is divisible by neither	-> i
+// - If the integer is divisible by 3 and 5 -> "FizzBuzz"
+// - If the integer is divisible by 3       -> "Fizz"
+// - If the integer is divisible by 5       -> "Buzz"
+// - If the integer is divisible by neither -> i
 func FizzBuzz(i int) string {
 	switch {
 	case i%15 == 0:

@@ -6,6 +6,8 @@ Rob Reid [@codingconcepts](https://github.com/codingconcepts)
 
 Nick Lanng [@nicklanng](https://github.com/nicklanng)
 
+Rui Marques [@ruionwriting](https://github.com/ruionwriting)
+
 ## Topics
 1. [Install Go](#install-go)
 2. What is the Go workspace and why is it different to project workspaces
@@ -23,6 +25,42 @@ Nick Lanng [@nicklanng](https://github.com/nicklanng)
 ### Windows
 
 ### Linux
+Depending on the distro you use you might have Go already available with your package manager. For example for Unbutu there is a [PPA](https://github.com/golang/go/wiki/Ubuntu) and in most variantes is already added on your system. The install goes as follows:
+```bash
+sudo apt-get install golang
+```
+
+In the case that you want a bit more control or if you want to use a different version than the one available from the PPA just install it directly. Visit the [official Go downloads page](https://golang.org/dl/) and find the URL for the current binary release's tarball, along with its SHA256 hash
+```bash
+cd ~
+curl -O https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
+```
+
+Verify the tarball using `sha256sum`:
+```bash
+sha256sum go1.8.linux-amd64.tar.gz
+53ab94104ee3923e228a2cb2116e5e462ad3ebaeea06ff04463479d7f12d27ca  go1.8.linux-amd64.tar.gz
+```
+Extract the files:
+```bash
+tar xvf go1.8.linux-amd64.tar.gz
+```
+You should now have a directory called `go` in your home directory. Recursively change go's owner and group to `root`, and move it to `/usr/local`:
+```bash
+sudo chown -R root:root ./go
+sudo mv go /usr/local
+```
+
+Create a folder for your Go workspace, I like to make a folder at ```~/work/go```.
+
+Open your ~/.bashrc or ~/.zshrc (or whatever the config file is for your shell of choice).
+You need to set up your environmental variables used for Go tooling and binaries pulled down with ```go get```.
+
+Add the following lines to your shell config, be sure to set the right path if different:
+```bash
+export GOPATH=$HOME/work/go
+export PATH=$PATH:$GOPATH/bin
+```
 
 ### Mac OS X
 The easiest way to install go is to use [Homebrew](http://brew.sh/).

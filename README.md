@@ -25,12 +25,12 @@ Rui Marques [@ruionwriting](https://github.com/ruionwriting)
 ### Windows
 
 ### Linux
-Depending on the distro you use you might have Go already available with your package manager. For example for Unbutu there is a [PPA](https://github.com/golang/go/wiki/Ubuntu) and in most variantes is already added on your system. The install goes as follows:
+Depending on the distro, you use you might already have Go available with your package manager. For example, Ubuntu has a [PPA](https://github.com/golang/go/wiki/Ubuntu) and, in most variants, is already added on your system. The install goes as follows:
 ```bash
 sudo apt-get install golang
 ```
 
-In the case that you want a bit more control or if you want to use a different version than the one available from the PPA just install it directly. Visit the [official Go downloads page](https://golang.org/dl/) and find the URL for the current binary release's tarball, along with its SHA256 hash
+In the case that you want a bit more control, or if you want to use a different version than the one available from the PPA, just install it directly; visit the [official Go downloads page](https://golang.org/dl/) and find the URL for the current binary release's tarball, along with its SHA256 hash.
 ```bash
 cd ~
 curl -O https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
@@ -45,13 +45,13 @@ Extract the files:
 ```bash
 tar xvf go1.8.linux-amd64.tar.gz
 ```
-You should now have a directory called `go` in your home directory. Recursively change go's owner and group to `root`, and move it to `/usr/local`:
+You should now have a directory called `go` in your home directory. Recursively change `go`'s owner and group to `root`, and move it to `/usr/local`:
 ```bash
 sudo chown -R root:root ./go
 sudo mv go /usr/local
 ```
 
-Create a folder for your Go workspace, I like to make a folder at ```~/work/go```.
+Create a folder for your Go workspace, we recommend to make a folder at `~/work/go`.
 
 Open your ~/.bashrc or ~/.zshrc (or whatever the config file is for your shell of choice).
 You need to set up your environmental variables used for Go tooling and binaries pulled down with ```go get```.
@@ -68,10 +68,10 @@ The easiest way to install go is to use [Homebrew](http://brew.sh/).
 brew install go
 ```
 
-Create a folder for your Go workspace, I like to make a folder at ```~/work/go```.
+Create a folder for your Go workspace, we recommend to make a folder at `~/work/go`.
 
 Open your ~/.bashrc or ~/.zshrc (or whatever the config file is for your shell of choice).
-You need to set up your environmental variables used for Go tooling and binaries pulled down with ```go get```.
+You need to set up your environmental variables used for Go tooling and binaries pulled down with `go get`.
 
 Add the following lines to your shell config, be sure to set the right path if different:
 ```bash
